@@ -12,6 +12,8 @@ public class FibonacijevBroj {
 
 		int unos;
 		Scanner in = new Scanner(System.in);
+		System.out.println("Unesite redni fibonacijev broj");
+		
 		unos = in.nextInt();
 
 		// Prva dva broja su 1
