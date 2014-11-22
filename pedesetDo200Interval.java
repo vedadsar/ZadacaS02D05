@@ -30,6 +30,14 @@ public class pedesetDo200Interval {
 		System.out.println("Unesite treci broj ");
 		broj3 = in.nextInt();
 
+		
+		// Ispitivanje da li je broj u rangu
+				if ((broj1 < 50 || broj1 > 200) || (broj2 < 50 || broj2 > 200)
+						|| (broj3 < 50 || broj3 > 200)) {
+					System.out.println("Brojevi nisu u intervalu izmedju 50 i 200");
+					return;
+				}		
+		
 		// Ako su svi brojevi isti
 		if (broj1 == broj2 && broj1 == broj3 && broj2 == broj3) {
 			System.out.println("Svi brojevi su isti");
@@ -42,12 +50,7 @@ public class pedesetDo200Interval {
 			return;
 		}
 
-		// Ispitivanje da li je broj u rangu
-		if ((broj1 < 50 || broj1 > 200) || (broj2 < 50 || broj2 > 200)
-				|| (broj3 < 50 || broj3 > 200)) {
-			System.out.println("Brojevi nisu u intervalu izmedju 50 i 200");
-			return;
-		}
+		
 		// Ispitivanje velicine brojeva
 
 		// broj=max
