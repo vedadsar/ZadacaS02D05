@@ -27,21 +27,18 @@ public class StringsZadaca {
 		int brojac1 = 1;
         recenica = recenica.trim();
         String razmak;
-        char razmak1 = '';
+       int brojRazmaka = 0;
         
         
-        //Trazenje razmaka
-        
-        for( int k=0; k<(recenica.length()-1); k++){
-              if(recenica.charAt(k)==space && recenica.charAt(k+1)==0){
-            	//Nije zavrsenooooo
-              }
-        }
-        	
+       
 		// Trazenje rijeci
 		for (i = 0; i < (recenica.length() - 1); i++) {
 
 			if (recenica.charAt(i) == space) {
+				if  (recenica.charAt(i+1)==space  &&  recenica.charAt(i+1)==space){
+					
+							brojac=brojac-1;
+				}
 				brojac = brojac + 1;//Ukoliko je charAt(i) = 0, brojac povecavamo za 1.
 			}
 
