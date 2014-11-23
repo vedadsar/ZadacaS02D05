@@ -13,6 +13,7 @@ public class Permutacija {
 		int i;
 		int brojac = 0;
 		String slovo;
+		String slovo2;
 
 		if (rijec1.length() != rijec2.length()) {
 			System.out.println("Rijeci nisu iste velicina");
@@ -21,7 +22,9 @@ public class Permutacija {
 
 		for (i = 0; i < rijec1.length(); i++) {
 			slovo = "" + rijec1.charAt(i);
-			if (rijec2.contains(slovo) && (rijec1.contains(slovo))) {
+			slovo2 = "" + rijec2.charAt(i);
+			if (rijec2.contains(slovo) && (rijec1.contains(slovo))
+					&& (rijec2.contains(slovo2)) && rijec1.contains(slovo2)) {
 				brojac = brojac + 1;
 			}
 
